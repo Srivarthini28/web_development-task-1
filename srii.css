@@ -1,0 +1,458 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(6, 2, 20);
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.typing {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b4d1f1;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0056b3;
+  animation: typing 4s steps(40, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #0056b3;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0%;
+  background-color: rgb(6, 2, 20);
+  z-index: 100;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  margin-inline: 22px;
+  color: white;
+  font-size: 22px;
+}
+ul li a:hover {
+  color: aqua;
+}
+.logo {
+  font-size: 22px;
+  color: white;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 111px;
+}
+.mainText {
+  margin-top: 84px;
+}
+.mainText h1 {
+  font-size: 68px;
+}
+.mainText p {
+  font-size: 17px;
+  margin-top: 22px;
+}
+.mainText h3 {
+  font-size: 26px;
+}
+.mainText button {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(0, 202, 202);
+  color: white;
+  border: none;
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+.head {
+  text-align: center;
+  padding: 88px;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 83px;
+  justify-content: center;
+  padding: 22px;
+}
+#yt {
+  color: aqua;
+}
+.about img {
+  overflow: hidden;
+  width: 315px;
+  height: 300px;
+  border-radius: 50%;
+  border: 6px solid rgb(0, 255, 255);
+  box-shadow: 0 0 30px 10px rgba(0, 255, 255, 0.5),
+    0 0 60px 20px rgba(0, 255, 255, 0.3), 0 0 100px 30px rgba(0, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.aboutText {
+  margin-top: 22px;
+  justify-content: center;
+}
+.about p {
+  margin-top: 22px;
+  font-size: 18px;
+}
+.about h2 {
+  font-size: 46px;
+}
+.EDucation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.btns button {
+  padding: 9px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(16, 15, 15);
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.btns button:hover {
+  background-color: rgb(250, 80, 108);
+}
+.Education {
+  width: 300px;
+  padding: 22px;
+  text-align: center;
+  background-color: #e3fc03;
+  color: rgb(240, 231, 231);
+  margin-top: 22px;
+  margin-inline: 22px;
+}
+.Education i {
+  font-size: 63px;
+}
+.Education h2 {
+  margin-top: 22px;
+  color: rgb(229, 71, 103);
+}
+.EDucation p {
+  margin-top: 22px;
+}
+.EDucation button {
+  margin-top: 22px;
+  width: 90px;
+  height: 33px;
+  background-color: pink;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projectCard {
+  margin-inline: 22px;
+  margin-top: 42px;
+  text-align: center;
+  text-align: center;
+  width: 560px;
+  border-radius: 4px;
+}
+
+.projectCard1 {
+  margin-inline: 22px;
+  margin-top: 42px;
+  text-align: center;
+  width: 560px;
+  border-radius: 4px;
+}
+.projectCard p {
+  margin-top: 11px;
+}
+.projectCard a {
+  padding: 6px 22px;
+  background-color: pink;
+  text-decoration: none;
+  position: relative;
+  top: 12px;
+  border-radius: 4px;
+}
+.projectCard1 a {
+  padding: 6px 22px;
+  background-color: pink;
+  text-decoration: none;
+  position: relative;
+  top: 12px;
+  border-radius: 4px;
+}
+.project img {
+  overflow: hidden;
+  width: 500px;
+  height: 373px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 30px 10px rgba(0, 255, 255, 0.5),
+    0 0 60px 20px rgba(0, 255, 255, 0.3), 0 0 100px 30px rgba(0, 255, 255, 0.2);
+}
+
+.project img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.contact {
+  width: 400px;
+  margin: auto;
+  background-color: #46818e;
+  padding: 22px;
+  text-align: center;
+}
+.contact input {
+  width: 90%;
+  font-size: 18px;
+  padding: 11px;
+  margin-top: 11px;
+  height: 13px;
+}
+#msg {
+  width: 90%;
+  margin-top: 12px;
+  padding: 11px;
+  font-size: 18px;
+}
+.contact button {
+  width: 100px;
+  height: 36px;
+  border: none;
+  background-color: pink;
+  margin-top: 22px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons {
+  text-align: center;
+  font-size: 42px;
+  cursor: pointer;
+}
+.icons > fa {
+  background-color: white;
+}
+.footer {
+  padding: 33px;
+  margin-top: 22px;
+}
+.text p {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 22px;
+}
+#bar {
+  display: none;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .mainText h1 {
+    font-size: 33px;
+  }
+  .main img {
+    width: 90%;
+  }
+  .mainText p {
+    font-size: 14px;
+  }
+  .serviceCard {
+    width: 70%;
+  }
+  .workCard img {
+    width: 80%;
+  }
+  .contact {
+    width: 80%;
+  }
+  ul {
+    display: none;
+  }
+  #bar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .about {
+    text-align: center;
+  }
+  .about img {
+    width: 90%;
+    height: 250px;
+  }
+}
+.text {
+  text-align: left;
+  margin-left: 100px;
+  display: flex;
+}
+#shorthand {
+  color: white;
+  box-sizing: border-box;
+  width: 600px;
+  padding: 30px;
+  margin: 10px;
+}
+#shorthand > #heading {
+  color: rgb(233, 233, 243);
+  font-size: 20px;
+}
+#footer {
+  text-align: center;
+}
+
+#training1 {
+  margin-top: 70px;
+}
+
+.Education {
+  overflow: hidden;
+  width: 300px;
+  padding: 22px;
+  text-align: center;
+  background-color: rgb(98, 193, 229);
+  color: rgb(240, 231, 231);
+  margin-top: 22px;
+  margin-inline: 22px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 30px 10px rgba(96, 205, 232, 0.5),
+    0 0 60px 20px rgba(80, 193, 234, 0.3),
+    0 0 100px 30px rgba(111, 199, 223, 0.2);
+}
+
+.Education::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(11, 66, 90, 0.3), transparent);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.training {
+  text-align: center;
+  justify-content: center;
+  width: 801px;
+  padding: 22px;
+  background-color: rgb(98, 193, 229);
+  color: rgb(240, 231, 231);
+  margin-top: 22px;
+  margin-inline: 22px;
+  margin-left: 340px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 30px 10px rgba(165, 233, 236, 0.5),
+    0 0 60px 20px rgba(154, 225, 243, 0.3),
+    0 0 100px 30px rgba(192, 212, 216, 0.2);
+}
+
+.training::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(27, 22, 156, 0.3), transparent);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.training h2 {
+  color: rgb(229, 71, 103);
+}
+#training1 h1 {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
